@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>School Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(2, 1, 0);
+        line-height: 1.4;
+      }
+
+      #header {
+        margin-bottom: 15px;
+        background: rgb(165, 186, 224);
+        color: rgb(22, 1, 1);
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 69%;
+      }
+
+      #sidebar {
+        float: right;
+        width: 29%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      #footer {
+        background: rgb(43, 68, 122);
+        color: #fff;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        border: 1px solid rgb(167, 213, 224);
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="card">
+      <h1>West High School</h1>
+      <p>School for Students who want to Excel</p>
+    </header>
+
+    <!-- Main Content (left) -->
+    <main id="main">
+
+        <!-- Welcome Section -->
+      <section id="welcome" class="card">
+        <h2>Feedback to the West</h2>
+        <p>
+            <html>
+
+                <head>
+                    <style>
+                        
+                        .container {
+                            max-width: 400px;
+                            width: 100%;
+                            margin: 0 auto;
+                            position: relative;
+                        }
+                        
+                        #contact input[type="text"],
+                        #contact input[type="email"],
+                        #contact input[type="tel"],
+                        #contact input[type="url"],
+                        #contact textarea,
+                        #contact button[type="submit"] {
+                            font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+                        }
+                        
+                        #contact {
+                            background: #F9F9F9;
+                            padding: 25px;
+                            margin: 150px 0;
+                            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                            background-color: #b4c5ce;
+                        }
+                        
+                        #contact h3 {
+                            display: block;
+                            font-size: 30px;
+                            font-weight: 300;
+                            margin-bottom: 10px;
+                        }
+                        
+                        fieldset {
+                            border: medium none !important;
+                            margin: 0 0 10px;
+                            min-width: 100%;
+                            padding: 0;
+                            width: 100%;
+                        }
+                        
+                        #contact input[type="text"],
+                        #contact input[type="email"],
+                        #contact input[type="tel"],
+                        #contact input[type="url"],
+                        #contact textarea {
+                            width: 100%;
+                            border: 1px solid #ccc;
+                            background: #FFF;
+                            margin: 0 0 5px;
+                        }
+                        
+                        #contact input[type="text"]:hover,
+                        #contact input[type="email"]:hover,
+                        #contact input[type="tel"]:hover,
+                        #contact input[type="url"]:hover,
+                        #contact textarea:hover {
+                            -webkit-transition: border-color 0.3s ease-in-out;
+                            -moz-transition: border-color 0.3s ease-in-out;
+                            transition: border-color 0.3s ease-in-out;
+                            border: 1px solid #aaa;
+                        }
+                        
+                        #contact textarea {
+                            height: 100px;
+                            max-width: 100%;
+                            resize: none;
+                        }
+                        
+                        #contact button[type="submit"] {
+                            cursor: pointer;
+                            width: 100%;
+                            border: none;
+                            background: #4CAF50;
+                            color: #FFF;
+                            margin: 0 0 5px;
+                            padding: 10px;
+                            font-size: 15px;
+                        }
+                        
+                        #contact button[type="submit"]:hover {
+                            background: #43A047;
+                            -webkit-transition: background 0.3s ease-in-out;
+                            -moz-transition: background 0.3s ease-in-out;
+                            transition: background-color 0.3s ease-in-out;
+                        }
+                        
+                        #contact button[type="submit"]:active {
+                            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+                        }
+                        
+                        #contact input:focus,
+                        #contact textarea:focus {
+                            outline: 0;
+                            border: 1px solid #aaa;
+                        }
+                        
+                         ::-webkit-input-placeholder {
+                            color: #888;
+                        }
+                        
+                         :-moz-placeholder {
+                            color: #888;
+                        }
+                        
+                         ::-moz-placeholder {
+                            color: #888;
+                        }
+                        
+                         :-ms-input-placeholder {
+                            color: #888;
+                        }
+                    </style>
+                    <script>
+                        function checkSubmit() {
+                            alert("Submitted the feedback successfully")
+                        }
+                    </script>
+                </head>
+                
+                <body>
+                    <div class="container">
+                        <form id="contact" action="" method="post">
+                            <h3>Feedback Form</h3>
+                
+                            <fieldset>
+                                <input placeholder="Enter your name" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Enter your password" type="password" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Enter your Email Address" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Enter your Phone Number (optional)" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Enter your DOB" type="date" tabindex="4" required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea placeholder="Enter your feedback here, we are happy to hear you" tabindex="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <button name="submit" type="submit" onclick="checkSubmit()">Submit</button>
+                            </fieldset>
+                
+                        </form>
+                    </div>
+                </body>
+                
+                </html>
+        </p>
+      </section>
+        <article class="article">
+          <h3>Time Table</h3>
+          <p>
+            
+            <title>TimeTable</title>
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                }
+                table {
+                    border-collapse: collapse;
+                    width: 50%;
+                }
+            </style>
+            </head>
+            <body>
+            <table>
+                <tr style="background-color: #5c8945">
+                    <td colspan="6" align="center">Time Table</td>
+                </tr>
+                <tr style="background-color: #90c2dc">
+                    <td rowspan="7" style="background-color: #5c8945">Hours</td>
+                    <td align="center"><B>Mon</B></td>
+                    <td align="center"><B>Tue</B> </td>
+                    <td align="center"><B>Wed</B></td>
+                    <td align="center"><B>Thu</B></td>
+                    <td align="center"><B>Fri</B></td>
+
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                    <td>Sports</td>
+                </tr>
+                <tr style="background-color: #90c2dc">
+                    <td colspan="6" align="center">Exams</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td rowspan="2">Project</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                </tr>
+            </table>
+            
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Sidebar (right) -->
+    <aside id="sidebar" class="card">
+      <h3>Navigation</h3>
+      <!-- Navigation -->
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="faculties.html">Faculty</a></li>
+          <li><a href="certificate.html">Achievements</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+
+        </ul>
+      </nav>
+      <hr />
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Address:</strong> 50 Main st, Boston MA</li>
+        <li><strong>Phone:</strong> (555) 555-5555</li>
+        <li><strong>Email:</strong> me@somethingcool.come</li>
+      </ul>
+    </aside>
+
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="text-center">Copyright &copy; My Website 2019</p>
+    </footer>
+  </body>
+</html>

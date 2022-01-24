@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>School Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(2, 1, 0);
+        line-height: 1.4;
+      }
+
+      #header {
+        margin-bottom: 15px;
+        background: rgb(165, 186, 224);
+        color: rgb(22, 1, 1);
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 69%;
+      }
+
+      #sidebar {
+        float: right;
+        width: 29%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      #footer {
+        background: rgb(43, 68, 122);
+        color: #fff;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="card">
+      <h1>West High School</h1>
+      <p>School for Students who want to Excel</p>
+    </header>
+
+     <!-- Main Content (left) -->
+     <main id="main">
+        <!-- Welcome Section -->
+        <section id="welcome" class="card">
+          <h2>Upcoming events</h2>
+          <p>
+            <ul>
+              <li>Football Game at 7:30pm</li>
+              <li>Science Olympiad on Friday</li>
+              <li>Fundraising Event at Lomita</li>
+            </ul>
+          </p>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+          <h2>About Clubs</h2>
+          <!-- Article One -->
+          <article class="article">
+            <h3><p>CSI chapter &#128187;</p></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+              totam accusantium officiis!
+            </p>
+
+            <h3><p> Red Cross Club &#128308;</p></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+              totam accusantium officiis!
+            </p>
+
+            <h3><p>Toastmasters International &#128495;</p></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+              totam accusantium officiis!
+            </p>
+          </article>
+          <!-- Article Two -->
+          <article class="article">
+            <h3>Get to know more!</h3>
+            <p>
+              <iframe width="420" height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+            </p>
+          </article>
+        </section>
+      </main>
+
+    <aside id="sidebar" class="card">
+        <h3>Navigation</h3>
+        <!-- Navigation -->
+        <nav>
+          <ul id="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="faculties.html">Faculty</a></li>
+            <li><a href="certificate.html">Achievements</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+  
+          </ul>
+        </nav>
+        <hr />
+        <h3>Contact Us</h3>
+        <ul>
+          <li><strong>Address:</strong> 50 Main st, Boston MA</li>
+          <li><strong>Phone:</strong> (555) 555-5555</li>
+          <li><strong>Email:</strong> me@somethingcool.come</li>
+        </ul>
+      </aside>
+
+      <div class="clr"></div>
+  
+        <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">Copyright &copy; My Website 2019</p>
+      </footer>
+    </body>
+  </html>
+  
